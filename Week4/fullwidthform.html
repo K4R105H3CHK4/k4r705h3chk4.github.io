@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Contact Form</title>
+	<meta charset="utf-8">
+	<style>
+		h1 {color: #3e3e3e; font-size: 1.5em;}
+		
+		form { background-color: #95a681;
+			 font-family: Arial;
+			 width: 98%;
+			 border-radius: 10px;
+			 padding: 10px;}
+		
+		input, textarea { margin-top: 10px; 
+					width: 99%;}
+		
+		input::placeholder {color: #3e3e3e; font-family: Arial; font-size: 1em;}
+		textarea::placeholder {color: #3e3e3e; font-family: Arial; font-size: 1em;}
+		
+		label {float:top; width: 20%; margin-top: 10px; font-size: 80%; font-weight: bold;}
+
+		input[type="submit"], [type="reset"] {background-color: white; color: #3e3e3e; border-radius: 7px; width: 200px;}
+		
+		#wrapper{
+			text-align:center;
+			margin: 0 auto;
+			width: 80%
+		}
+		</style>
+</head>
+<body>
+	<h1>Contact Form</h1>
+	<form>
+		<label>First Name:</label><br><input type="text" name="fname" id="fname" placeholder="Enter your name here" required><br><br>
+		<label>Last Name:</label><br><input type="text" name="lname" id="lname" placeholder="Enter your surname here" required><br><br>
+		<label>E-mail:</label><br><input type="email" name="email" id="email" placeholder="Enter your email here" required> <br><br>
+		<label for "comments">Comments:</label><br><textarea name="comments" id="comments" rows="4" cols="40" placeholder="Enter your comments here" required></textarea><br><br>
+		<div id="wrapper">
+			<input type="submit" value = "Contact"><br>
+			<input type="Reset">
+		</div>
+	</form>
+<button onclick="history.back()">Go Back</button> 
+</body>
+</html>
