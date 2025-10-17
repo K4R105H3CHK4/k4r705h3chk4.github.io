@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Boxes Layout</title>
+	<meta charset="utf-8">
+	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 20px;
+			font-family: Arial, sans-serif;
+		}
+
+		div {
+			text-align: center;
+			font-weight: bold;
+			border-radius: 6px;
+			font-size: x-large;
+		}
+
+		.header {
+			font-size: xx-large;
+			width: 100%;
+			background: lightblue;
+			float: left;
+			margin-bottom: 1%;
+			height: 100px;
+			padding: 30px;
+		}
+
+		.box {
+			width: 66%;
+			background: lightpink;
+			float: left;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			height: 100px;
+			padding: 40px;
+		}
+
+		.tallbox {
+			width: 32%;
+			height: 230px;
+			background: lightpink;
+			float: right;
+			padding: 40px;
+		}
+
+		.container {
+			height: auto;
+			width: auto;
+			overflow: auto;
+			margin-bottom: 2%;
+			clear: both;
+		}
+
+		.smallbox {
+			width: 32%;
+			background: lightpink;
+			float: left;
+			margin-right: 2%;
+			height: 100px;
+			padding: 40px;
+		}
+	</style>
+</head>
+<body>
+
+<div class = "header">
+	<header>Header</header>
+</div>
+
+<div class="container">
+	<div class="box">Box 1</div>
+	<div class="tallbox" style="padding: 110px;">Box 3</div>
+	<div class="box" style="margin-bottom: 0px;">Box 2</div>
+</div>
+
+<div class="container">
+	<div class="smallbox">Box 4</div>
+	<div class="smallbox">Box 5</div>
+	<div class="smallbox" style="margin: 0px">Box 6</div>
+</div>
+	
+ 
+<button onclick="history.back()">Go Back</button>
+
+
+</body>
+</html>
