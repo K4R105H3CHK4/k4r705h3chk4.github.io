@@ -12,6 +12,9 @@ main{
 	padding: 10px;
 	overflow:auto;
 	}
+main img{
+	max-width:100%;
+	}
 footer{
 	background-color: #ffffff;
 	height: 50px;
@@ -33,6 +36,8 @@ nav a{
 	text-decoration: none;
 	padding: 10px;
 	text-align: center;
+	display: inline-block;
+	width: 80px;
 	}
 	
 nav a:hover{
@@ -44,22 +49,24 @@ form { background-color: #FFB3C6;
 			 border-radius: 10px;
 			 padding: 10px;}
 		
-input, textarea { margin-top: 10px; }
+input, textarea { margin-top: 10px;  width: 90%;}
 		
 input::placeholder {color: #3e3e3e; font-family: Arial; font-size: 1em;}
 
 textarea::placeholder {color: #3e3e3e; font-family: Arial; font-size: 1em;}
 		
-label {float:left; width: 20%; margin-top: 10px; font-size: 80%;}
+label {float:left; width: 100%; margin-top: 10px; font-size: 80%;}
 
-input[type="submit"], [type="reset"] {background-color: white; color: #3e3e3e; border-radius: 3px;}
+input[type="submit"], [type="reset"] {background-color: white; color: #3e3e3e; border-radius: 3px; width: 100%;}
 
 .box{width:40%; float:left;}
 
-li{margin:10px; width: 200px;}
+.box_contact{width:40%; float:left; margin: 5%}
+
+li{margin:10px; width: 90%;}
 
 .box a {
-  display: block; /* This is the key! */
+  display: block;
   border-radius: 5px;
   background-color: #ffffff;
   text-decoration: none;
@@ -93,4 +100,34 @@ li{margin:10px; width: 200px;}
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+
+.google-map {
+  padding-bottom: 80%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1024px){
+	body{margin:0;}	
+	#wrapper{width: auto;}
+	p{font-size:90%}
+}
+
+@media only screen and (max-width: 768px){
+	nav{padding: 10px 5px;}
+	nav a{margin-right: 2px; width: 70px; padding: 5px;}
+}
+
+@media only screen and (max-width: 600px){
+	header{text-align: center; border-bottom: 2px solid white;}
+	nav{padding: 0;}
+	nav a{display:block; border-bottom: 1px solid #FF8FAB; width: auto; border-left: 0; border-right: 0; text-align: center; margin-right: 0px;}
 }
